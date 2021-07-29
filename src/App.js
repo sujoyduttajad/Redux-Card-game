@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { store } from './app/store.js';
+// Add import statement below
+import { Provider } from 'react-redux'
 
-export default App;
+ReactDOM.render(
+  // Implement Provider component with store below
+  <Provider store={store}>
+    <App />
+   </Provider> ,
+  document.getElementById('root')
+);
