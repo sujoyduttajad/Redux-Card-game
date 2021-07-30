@@ -3,7 +3,7 @@ import reportWebVitals from './reportWebVitals';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { store } from './src/redux/app/store.js';
+import { store } from './redux/app/store.js';
 import { Provider } from 'react-redux'
 
 ReactDOM.render(
