@@ -3,7 +3,8 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectVisibleIDs, flipCard, resetCards, selectMatchedIDs } from '../../boardSlice.js'
 
-let cardLogo = "https://images-platform.99static.com//yMu615t0H7ZoE7NAZn48S48DZGY=/350x309:851x810/fit-in/590x590/99designs-contests-attachments/90/90852/attachment_90852898";
+// let cardLogo = "https://images-platform.99static.com//yMu615t0H7ZoE7NAZn48S48DZGY=/350x309:851x810/fit-in/590x590/99designs-contests-attachments/90/90852/attachment_90852898";
+let cardLogo = "https://upload.wikimedia.org/wikipedia/commons/6/6d/5C.svg";
 
 export const Card = ({ id, indices, contents }) => {
   // Add selected data and dispatch variables below

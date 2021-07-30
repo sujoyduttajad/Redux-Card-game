@@ -11,14 +11,13 @@ body {
 }
 
 .card {
-  padding: 20px 0;
+  padding: 15.5px 0;
   text-align: center;
   border-radius: 6px;
   border: solid 1px #141c3a;
   background-color: #141c3a;
   color: white;
   cursor: pointer;
-  /* height: 75px; */
   font-size: 16px;
 }
 
@@ -52,12 +51,12 @@ body {
 }
 
 .logo-placeholder {
-  width: 120px;
+  width: 60%;
 }
 
 .score-container {
   background-color: #f2f2f2;
-  padding: 18px 158px 23px 159px;
+  padding: 15px 158px 10px 159px;
   text-align: center;
   font-size: 32px;
 }
