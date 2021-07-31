@@ -1,5 +1,4 @@
 import React from 'react';
-// Add import statements below
 import { useSelector, useDispatch } from 'react-redux';
 import { selectVisibleIDs, flipCard, resetCards, selectMatchedIDs } from '../../boardSlice.js'
 
@@ -7,17 +6,16 @@ import { selectVisibleIDs, flipCard, resetCards, selectMatchedIDs } from '../../
 let cardLogo = "https://upload.wikimedia.org/wikipedia/commons/6/6d/5C.svg";
 
 export const Card = ({ id, indices, contents }) => {
-  // Add selected data and dispatch variables below
+  // selected data and dispatch variables
   const visibleIDs = useSelector(selectVisibleIDs);
   const matchedIDs = useSelector(selectMatchedIDs);
   const dispatch = useDispatch();
+
   // flip card action
   const flipHandler = (id) => {
-    // Add action dispatch below
     return dispatch(flipCard(id));
   };
   const resetHandler = (id) => {
-    // Add action dispatch below
     return dispatch(resetCards(indices));
   };
 

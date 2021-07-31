@@ -1,16 +1,16 @@
 const initialState = [
-    {id: 0, contents: 'Provider', visible: true, matched: true}, 
-    {id: 1, contents: 'Provider', visible: true, matched: true}, 
-    {id: 2, contents: 'selector', visible: true, matched: true}, 
-    {id: 3, contents: 'selector', visible: true, matched: true}, 
-    {id: 4, contents: 'useSelector()', visible: true, matched: true}, 
-    {id: 5, contents: 'useSelector()', visible: true, matched: true}, 
-    {id: 6, contents: 'useDispatch()', visible: true, matched: true}, 
-    {id: 7, contents: 'useDispatch()', visible: true, matched: true}, 
-    {id: 8, contents: 'Pure Function', visible: true, matched: true}, 
-    {id: 9, contents: 'Pure Function', visible: true, matched: true}, 
-    {id: 10, contents: 'react-redux', visible: true, matched: true}, 
-    {id: 11, contents: 'react-redux', visible: true, matched: true}, 
+    {id: 0, contents: 'Columbus', visible: true, matched: true}, 
+    {id: 1, contents: 'Columbus', visible: true, matched: true}, 
+    {id: 2, contents: 'Bananas', visible: true, matched: true}, 
+    {id: 3, contents: 'Bananas', visible: true, matched: true}, 
+    {id: 4, contents: 'Submarine', visible: true, matched: true}, 
+    {id: 5, contents: 'Submarine', visible: true, matched: true}, 
+    {id: 6, contents: 'Reciprocate', visible: true, matched: true}, 
+    {id: 7, contents: 'Reciprocate', visible: true, matched: true}, 
+    {id: 8, contents: 'Pure Blood', visible: true, matched: true}, 
+    {id: 9, contents: 'Pure Blood', visible: true, matched: true}, 
+    {id: 10, contents: 'Spacecraft', visible: true, matched: true}, 
+    {id: 11, contents: 'Spacecraft', visible: true, matched: true}, 
   ];
   
   export const boardReducer = (state = initialState, action) => {
@@ -50,12 +50,12 @@ const initialState = [
   }
   
   const wordPairs = [
-    'Provider', 'Provider', 
-    'selector', 'selector', 
-    'useSelector()', 'useSelector()', 
-    'useDispatch()', 'useDispatch()',
-    'Pure Function', 'Pure Function',
-    'react-redux', 'react-redux',
+    'Columbus', 'Columbus', 
+    'Bananas', 'Bananas', 
+    'Submarine', 'Submarine', 
+    'Reciprocate', 'Reciprocate',
+    'Pure Blood', 'Pure Blood',
+    'Spacecraft', 'Spacecraft',
   ]
   
   const randomWords = () => {
@@ -93,7 +93,6 @@ const initialState = [
     }
   }
   
-  // Add selector export statments below
   export const selectBoard = (state) => state.board.map(card => {
     return ({
       id: card.id,
