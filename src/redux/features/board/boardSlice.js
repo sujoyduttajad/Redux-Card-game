@@ -93,6 +93,7 @@ const initialState = [
     }
   }
   
+  // selectors
   export const selectBoard = (state) => state.board.map(card => {
     return ({
       id: card.id,

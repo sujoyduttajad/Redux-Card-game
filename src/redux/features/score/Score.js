@@ -8,6 +8,6 @@ export const Score = () => {
 
   return (
     // implemented selected data inside <div>
-    <div className="score-container">Matched: {cardsMatched.length}</div>
+    <div className="score-container">Score: {cardsMatched.length}</div>
   );
 };
