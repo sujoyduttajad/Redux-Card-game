@@ -7,7 +7,9 @@ export const Score = () => {
   const cardsMatched = useSelector(selectMatchedIDs);
 
   return (
-    // implemented selected data inside <div>
-    <div className="score-container">Score: {cardsMatched.length}</div>
+     <section className="header"> 
+        <div className="score-container"><h3>Matching Memory</h3></div>
+        <div className="score-container">Score: {cardsMatched.length}</div>
+    </section>
   );
 };
