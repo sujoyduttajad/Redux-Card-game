@@ -15,9 +15,9 @@ export const Card = ({ id, indices, contents }) => {
   const flipHandler = (id) => {
     return dispatch(flipCard(id));
   };
-  const resetHandler = (id) => {
-    return dispatch(resetCards(indices));
-  };
+//   const resetHandler = (id) => {
+//     return dispatch(resetCards(indices));
+//   };
 
   let cardStyle = 'resting'
   let click = () => flipHandler(id);
